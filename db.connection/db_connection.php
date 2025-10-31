@@ -11,10 +11,7 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $password = "qbWkuINh3wc8P9z";
     $dbname = "bhavicreationspvtltd";
    
-    
-    // $username = "bhavicreations";
-    // $password = "d8Az75YlgmyBnVM";
-    // $dbname = "bhavicreations";
+
 
 }
 
