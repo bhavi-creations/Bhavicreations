@@ -1638,7 +1638,7 @@
                                         <div class="col-md-4">
                                             <div class="card card-body">
                                                 <img class="img-fluid"
-                                                    src="assests/images/Bhavi_Creations/social_media_managment_satya_bhavi_creations.webp">
+                                                    src="assests/images/Bhavi_Creations/vinaya_designer.png">
                                             </div>
                                         </div>
                                     </div>
@@ -1734,14 +1734,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <!-- <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
                                                 <img class="img-fluid"
                                                     src="assests/images/Bhavi_Creations/developer_ramesh_bhavi_creations.webp">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
@@ -1865,7 +1865,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flip-card mt-4">
+                            <!-- <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <img src="assests/images/Bhavi_Creations/developer_ramesh_bhavi_creations.webp"
@@ -1876,7 +1876,7 @@
                                         <p>Web Developer</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
@@ -1963,13 +1963,12 @@
 
 
 
-                                        <img src="assests/images/Bhavi_Creations/social_media_managment_satya_bhavi_creations.webp"
+                                        <img src="assests/images/Bhavi_Creations/vinaya_designer.png"
                                             alt="Front Image" class="card-image img-fluid">
-                                        <!-- <img src="assests/images/Bhavi_Creations/sathish_designer.png"
-                                            alt="Front Image" class="card-image img-fluid"> -->
+                                        
                                     </div>
                                     <div class="flip-card-back">
-                                        <p class="title">B.V.N.C.Satya Sai</p>
+                                        <p class="title">Sri Vinaya</p>
                                         <p>Designer</p>
                                     </div>
                                 </div>
