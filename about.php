@@ -1716,14 +1716,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="carousel-item">
+                                    <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
                                                 <img class="img-fluid"
-                                                    src="assests/images/Bhavi_Creations/mahendra.png">
+                                                    src="assests/images/Bhavi_Creations/sriram.png">
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                      
                                      
                                     <div class="carousel-item">
@@ -1915,19 +1915,19 @@
                     aria-labelledby="pills-Designers-kakinada-tab" tabindex="0">
                     <div class="container text-center my-3">
                         <div class="row mx-auto my-auto" style="justify-content: space-evenly;">
-                          <!-- <div class="flip-card mt-4">
+                          <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <img src="assests/images/Bhavi_Creations/mahendra.png"
+                                        <img src="assests/images/Bhavi_Creations/sriram.png"
                                             alt="mahendra" class="card-image img-fluid">
 
                                     </div>
                                     <div class="flip-card-back">
-                                        <p class="title">Mahendra</p>
+                                        <p class="title">Sri Ram</p>
                                         <p>Designer</p>
                                     </div>
                                 </div>
-                            </div>  -->
+                            </div> 
                             <div class="flip-card  mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
