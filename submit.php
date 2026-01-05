@@ -1,17 +1,26 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // ================== DB CONNECTION ==================
-$conn = new mysqli("localhost", "root", "", "bhavicreations_db");
+$conn = new mysqli(
+    "localhost",
+    "bhavicreationspvtltd",
+    "qbWkuINh3wc8P9z",
+    "bhavicreationspvtltd"
+);
+
 if ($conn->connect_error) {
-    die("DB Connection Failed");
+    die("DB Connection Failed: " . $conn->connect_error);
 }
 
 // ================== PHPMailer ==================
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
+require __DIR__ . '/PHPMailer/src/Exception.php';
+require __DIR__ . '/PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/PHPMailer/src/SMTP.php';
 
 // ================== POST DATA ==================
 $name    = $_POST['name'] ?? '';
@@ -48,6 +57,10 @@ payment_type, gst_option)
 VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 $stmt = $conn->prepare($sql);
+if(!$stmt){
+    die("SQL Error: " . $conn->error);
+}
+
 $stmt->bind_param(
     "sssssssssssssssss",
     $name, $phone, $address,
@@ -66,21 +79,10 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-
     $mail->Username   = 'manimalladi05@gmail.com';
-    $mail->Password   = 'mxhnohjzbkofbrbs'; // ✅ NO SPACES
-
+    $mail->Password   = 'mxhnohjzbkofbrbs';
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
-
-    // ✅ XAMPP SSL FIX
-    $mail->SMTPOptions = [
-        'ssl' => [
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true,
-        ],
-    ];
 
     $mail->setFrom('manimalladi05@gmail.com', 'Bhavi Creation');
     $mail->addAddress('manimalladi05@gmail.com');
@@ -89,22 +91,16 @@ try {
     $mail->Subject = 'New Enquiry - Bhavi Creation Pvt Ltd';
 
     $mail->Body = "
-    <h2>New Enquiry Received</h2>
-
-    <b>Name:</b> $name <br>
-    <b>Phone:</b> $phone <br>
-    <b>Address:</b> $address <br><br>
-
-    <b>Photos:</b> $photo_count ($photo_type) <br>
-    <b>Videos:</b> $video_count ($video_type) <br>
-    <b>Reels:</b> $reels_count ($reels_type) <br><br>
-
-    <b>Website:</b> $website_type <br>
-    <b>SEO:</b> $seo_option <br><br>
-
-    <b>Social Media:</b> " . implode(', ', $_POST['social_media'] ?? []) . "<br><br>
-
-    <b>Payment:</b> $payment_type <br>
+    <h2>New Enquiry</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br>
+    <b>Address:</b> $address<br><br>
+    <b>Photos:</b> $photo_count ($photo_type)<br>
+    <b>Videos:</b> $video_count ($video_type)<br>
+    <b>Reels:</b> $reels_count ($reels_type)<br><br>
+    <b>Website:</b> $website_type<br>
+    <b>SEO:</b> $seo_option<br><br>
+    <b>Payment:</b> $payment_type<br>
     <b>GST:</b> $gst_option
     ";
 

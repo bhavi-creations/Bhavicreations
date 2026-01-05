@@ -24,7 +24,7 @@
 
             <!-- BASIC DETAILS -->
             <div class="section-box">
-                <h5>Basic Details</h5>
+                <!-- <h5>Basic Details</h5> -->
                 <input type="text" name="name" class="form-control mb-2" placeholder="Name" required>
                 <input type="text" name="phone" class="form-control mb-2" placeholder="Phone Number" required>
                 <textarea name="address" class="form-control" placeholder="Address"></textarea>
