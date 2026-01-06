@@ -1,9 +1,3 @@
-<?php
-include 'db.connection/db_connection.php';
-$result = $conn->query("SELECT * FROM bhavi_enquiries ORDER BY created_at DESC");
-?>
-
-
 <!doctype html>
 <html lang="en">
 
@@ -391,7 +385,7 @@ $result = $conn->query("SELECT * FROM bhavi_enquiries ORDER BY created_at DESC")
         <div class="container nav_main p-3">
             <div class="d-flex justify-content-between align-items-center">
 
-                <a href="index.php"> <img src="assests/images/bhavi/foot_bhavi_logo_1.webp" class="img-fluid   "
+                <a href="index.php"> <img src="assests/images/bhavi/foot_bhavi_logo.webp" class="img-fluid   "
                         style="width: 150px;height: 65px;" alt=""></a>
 
 
@@ -470,7 +464,6 @@ $result = $conn->query("SELECT * FROM bhavi_enquiries ORDER BY created_at DESC")
                     <!-- <li><a class="dropdown-item menu_item_black  " href="Portfolio.php">Portfolio</a></li> -->
                     <li><a class="dropdown-item menu_item_black  " href="contact_us.php">Contact Us</a></li>
                     <li><a class="dropdown-item menu_item_black  " href="our_works.php">Our Works</a></li>
-                    <li><a class="dropdown-item menu_item_black  " href="multimedia_service.php">Multimedia Service</a></li>
                     <li><a class="dropdown-item menu_item_black  " href="pages.php">Pages</a></li>
                     <!-- <li><a class="dropdown-item menu_item_black lol" href="https://invoice.bhavicreations.com">Login</a></li> -->
                 </ul>
@@ -479,499 +472,229 @@ $result = $conn->query("SELECT * FROM bhavi_enquiries ORDER BY created_at DESC")
             </div>
         </div>
     </section>
-
-
-
-
-    <div class="loader_butterflu">
-
-        <svg viewBox="0 0 18.528 35.424" version="1.1" y="0" x="0" height="369" width="193"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M3.358 35.05c.435-.175.646-.408.861-.95.374-.94.698-1.52 1.145-2.05.78-.92 1.757-1.638 2.666-1.957.603-.212.9-.204 1.505.041.843.343 1.597.25 2.062-.254.95-1.029 3.95-6.873 5.841-11.376.869-2.07.831-1.882.797-3.962-.034-2.106-.024-2.064-.927-3.887-1.639-3.31-4.426-6.582-7.147-8.392C8.71 1.298 6.715.504 5.296.328c-.718-.09-2.465-.001-3.183.16C.943.752.279 1.268.279 1.917c0 .119.437 1.136.97 2.26.533 1.126 1.044 2.291 1.135 2.591.334 1.106.776 3.567.945 5.27.065.652.357 1.286.751 1.633.419.367 1.351.786 1.964.883.286.044.534.096.553.115.018.018-.129.128-.327.244-.761.446-1.432 1.439-1.74 2.574-.216.802-.194 2.914.045 4.121.24 1.212.575 2.318 1.031 3.403.46 1.092.535 1.458.439 2.135-.223 1.575-1.958 4.03-3.489 4.937-.693.41-.885.587-1.066.98-.173.375-.185.535-.069.953.223.802 1.206 1.326 1.937 1.033z"
-                fill="#000"></path>
-        </svg>
-
-
-        <svg viewBox="0 0 2.4 14.4" version="1.1" y="0" x="0" height="150" width="25"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M2.2 13c0 .641-.447 1.16-1 1.16-.553 0-1-.519-1-1.16V1.4C.2.759.647.24 1.2.24c.553 0 1 .519 1 1.16z"
-                fill="#000"></path>
-        </svg>
-
-
-        <svg viewBox="0 0 18.528 35.424" version="1.1" y="0" x="0" height="369" width="193"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M15.105 35.155c-.42-.196-.627-.482-.902-1.253-.544-1.517-2.145-3.126-3.636-3.652-.69-.243-.887-.242-1.486.01-.617.26-1.342.278-1.798.045-.555-.283-1.76-2.262-3.476-5.708C2.628 22.232.984 18.575.455 17.144c-.236-.637-.237-.655-.237-2.485 0-2.164.01-2.209.9-4.013 1.011-2.049 2.53-4.189 4.185-5.9C7.679 2.293 9.783.995 12.49.313c.782-.197 1.554-.236 2.695-.137 1.619.14 2.38.38 2.882.909.21.22.246.321.243.684-.002.373-.122.67-.959 2.395-1.277 2.63-1.59 3.806-2.035 7.63-.111.951-.316 1.426-.809 1.87-.52.47-1.306.807-2.165.928l-.391.054.35.224c.897.574 1.58 1.674 1.834 2.956.193.969.12 2.791-.164 4.15-.222 1.061-.696 2.518-1.12 3.443-.336.735-.411 1.584-.203 2.3.505 1.738 2.056 3.692 3.736 4.705.693.417.938.83.874 1.476-.104 1.071-1.193 1.706-2.153 1.256z"
-                fill="#000"></path>
-        </svg>
-    </div>
-
-
     <style>
-        .enquiry-card {
+        .section-box {
             border: 1px solid #ddd;
-            border-radius: 12px;
             padding: 15px;
+            border-radius: 8px;
             margin-bottom: 20px;
         }
 
-        .label {
-            font-weight: 600;
+
+        .enquiry-wrapper {
+            max-width: 800px;
+            margin: 40px auto;
         }
 
-        .desktop-table {
-            display: none;
+        .enquiry-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
 
-        .print-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-        }
-
-        @media (min-width:768px) {
-            .mobile-cards {
-                display: none;
-            }
-
-            .desktop-table {
-                display: block;
-            }
-        }
-
-        @media print {
-
-            .print-btn,
-            .action-col {
-                display: none;
-            }
-
-            .mobile-cards {
-                display: none;
-            }
-
-            .desktop-table {
-                display: block;
-            }
-        }
-
-
-
-        /* view enquries */
-    </style>
-    <style>
-        h3 {
+        .enquiry-card h3 {
             font-weight: 600;
             color: #333;
         }
 
-        /* ===== MOBILE CARDS ===== */
-        .mobile-cards {
-            display: none;
+        .section-box {
+            background: #f8f9fc;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
 
-        .enquiry-card {
-            background: #fff;
-            border-radius: 14px;
-            padding: 18px;
-            margin-bottom: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            border-left: 5px solid #667eea;
-        }
-
-        .enquiry-card p {
-            margin-bottom: 6px;
-            font-size: 14px;
-        }
-
-        .enquiry-card .label {
+        .section-box h5 {
             font-weight: 600;
-            color: #555;
+            margin-bottom: 12px;
+            color: #444;
         }
 
-        .enquiry-card i {
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        .enquiry-card i:hover {
-            transform: scale(1.15);
-            transition: 0.2s;
-        }
-
-        /* ===== DESKTOP TABLE ===== */
-        .desktop-table {
-            background: #fff;
-            padding: 15px;
-            border-radius: 16px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .table {
-            margin-bottom: 0;
-        }
-
-        .table thead {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: #fff;
-        }
-
-        .table thead th {
+        .section-box label {
+            margin-right: 15px;
             font-weight: 500;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .table tbody td {
-            vertical-align: middle;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .action-col i {
-            font-size: 18px;
             cursor: pointer;
         }
 
-        .action-col i:hover {
-            transform: scale(1.15);
-            transition: 0.2s;
+        .form-control,
+        .form-select {
+            border-radius: 10px;
         }
 
-        /* ===== RESPONSIVE ===== */
-        @media(max-width:768px) {
-
-            /* .desktop-table{
-        display:none;
-    } */
-            .mobile-cards {
-                display: block;
-            }
+        input[type="radio"] {
+            accent-color: #667eea;
         }
 
+        button.btn-primary {
+            border-radius: 12px;
+            padding: 12px;
+            font-size: 18px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+        }
 
-
-
-
-        @media print {
-
-/* Hide unwanted items */
-.mobile-cards,
-.print-btn,
-.action-col,
-.bi,
-button {
-    display: none !important;
-}
-
-/* Show table only */
-.desktop-table {
-    display: block !important;
-}
-
-table {
-    width: 100% !important;
-    border-collapse: collapse !important;
-    font-size: 14px;
-}
-
-table th,
-table td {
-    border: 1px solid #000 !important;
-    padding: 8px !important;
-    text-align: center;
-}
-
-/* Heading highlight */
-h3 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #000;
-    text-transform: uppercase;
-    border-bottom: 3px solid #000;
-    padding-bottom: 8px;
-}
-
-/* Page margins */
-
-}
-@media print {
-    table th,
-    table td {
-        padding: 6px !important;
-        font-size: 13px;
-    }
-    /* ================= TABLE HEIGHT FIX ================= */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-/* Header */
-table thead th {
-    padding: 8px 10px !important;   /* reduce height */
-    line-height: 1.2 !important;
-    vertical-align: middle !important;
-    text-align: center;
-    white-space: nowrap;           /* single line */
-    font-size: 14px;
-}
-
-/* Body cells */
-table tbody td {
-    padding: 8px 10px !important;
-    line-height: 1.2 !important;
-    vertical-align: middle !important;
-    text-align: center;
-    font-size: 14px;
-}
-
-/* Action buttons height control */
-table td .btn,
-table td button,
-table td a {
-    padding: 4px 8px !important;
-    font-size: 13px;
-    line-height: 1.1;
-}
-
-/* Icons inside table */
-table td i,
-table th i {
-    font-size: 14px;
-}
-
-/* Remove forced heights if any */
-table th,
-table td {
-    height: auto !important;
-    min-height: unset !important;
-}
-
-}
-
-
-
-
+        button.btn-primary:hover {
+            opacity: 0.9;
+        }
     </style>
 
-    </head>
+    <div class="container my-5">
+        <form action="submit.php" method="post">
 
-    <body>
-        <div class="container my-4">
+            <h3 class="text-center mb-4" style="color:blue ; font-weight: 800;"> Bhavi Creation Pvt Ltd</h3>
 
-            <h3 class="text-center mb-4">Bhavi Creations</h3>
-
-            <!-- ================= MOBILE VIEW ================= -->
-            <div class="mobile-cards">
-                <?php while ($row = $result->fetch_assoc()): ?>
-                    <div class="enquiry-card">
-
-                        <p><span class="label">Name:</span> <?= htmlspecialchars($row['name']) ?></p>
-                        <p><span class="label">Phone:</span> <?= $row['phone'] ?></p>
-
-                        <p>
-                            <span class="label">Photos:</span>
-                            <?= ($row['photo_type'] === 'Custom')
-                                ? $row['photo_count']
-                                : $row['photo_count'] . ' (' . $row['photo_type'] . ')' ?>
-                        </p>
-
-                        <p>
-                            <span class="label">Videos:</span>
-                            <?= ($row['video_type'] === 'Custom')
-                                ? $row['video_count']
-                                : $row['video_count'] . ' (' . $row['video_type'] . ')' ?>
-                        </p>
-
-                        <p>
-                            <span class="label">Reels:</span>
-                            <?= ($row['reels_type'] === 'Custom')
-                                ? $row['reels_count']
-                                : $row['reels_count'] . ' (' . $row['reels_type'] . ')' ?>
-                        </p>
-
-                        <p>
-                            <span class="label">Website:</span>
-                            <?= $row['website_type'] ?>
-                        </p>
-
-                        <p><span class="label">SEO:</span> <?= $row['seo_option'] ?></p>
-                        <p><span class="label">Payment:</span> <?= $row['payment_type'] ?></p>
-                        <p><span class="label">GST:</span> <?= $row['gst_option'] ?></p>
-
-                        <div class="d-flex gap-3 mt-2">
-                            <i class="bi bi-eye text-primary" onclick='viewData(<?= json_encode($row) ?>)'></i>
-                            <i class="bi bi-printer text-success" onclick='printCard(<?= json_encode($row) ?>)'></i>
-                            <i class="bi bi-trash text-danger" onclick="deleteRow(<?= $row['id'] ?>)"></i>
-                        </div>
-
-                    </div>
-                <?php endwhile; ?>
+            <!-- BASIC DETAILS -->
+            <div class="section-box">
+                <input type="text" name="name" class="form-control mb-2" placeholder="Your Name" required>
+                <input type="text" name="phone" class="form-control mb-2" placeholder="Phone Number" required>
+                <textarea name="address" class="form-control" placeholder="Address"></textarea>
             </div>
 
-            <!-- ================= DESKTOP TABLE ================= -->
-            <div class="desktop-table table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Phone</th>
-                            <th>Photos</th>
-                            <th>Videos</th>
-                            <th>Reels</th>
-                            <th>Website</th>
-                            <th>SEO</th>
-                            <th>Payment</th>
-                            <th>GST</th>
-                            <th class="action-col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <!-- PHOTO -->
+            <div class="section-box">
+                <h5>Photos</h5>
+                <label><input type="radio" name="photo_count" value="4" onclick="showPhotoType()"> 4</label>
+                <label><input type="radio" name="photo_count" value="8" onclick="showPhotoType()"> 8</label>
+                <label><input type="radio" name="photo_count" value="12" onclick="showPhotoType()"> 12</label>
+                <label><input type="radio" name="photo_count" value="16" onclick="showPhotoType()"> 16</label>
+                <label><input type="radio" name="photo_count" value="custom" onclick="showPhotoCustom()"> Custom</label>
 
-                        <?php
-                        $result->data_seek(0);
-                        while ($row = $result->fetch_assoc()):
-                        ?>
-                            <tr>
-                                <td><?= htmlspecialchars($row['name']) ?></td>
-                                <td><?= $row['phone'] ?></td>
+                <div id="photo_custom" style="display:none;" class="mt-2">
+                    <textarea name="photo_custom_msg" class="form-control" placeholder="Custom photo requirement"></textarea>
+                </div>
 
-                                <td>
-                                    <?= ($row['photo_type'] === 'Custom')
-                                        ? $row['photo_count']
-                                        : $row['photo_count'] . ' (' . $row['photo_type'] . ')' ?>
-                                </td>
-
-                                <td>
-                                    <?= ($row['video_type'] === 'Custom')
-                                        ? $row['video_count']
-                                        : $row['video_count'] . ' (' . $row['video_type'] . ')' ?>
-                                </td>
-
-                                <td>
-                                    <?= ($row['reels_type'] === 'Custom')
-                                        ? $row['reels_count']
-                                        : $row['reels_count'] . ' (' . $row['reels_type'] . ')' ?>
-                                </td>
-
-                                <td><?= $row['website_type'] ?></td>
-                                <td><?= $row['seo_option'] ?></td>
-                                <td><?= $row['payment_type'] ?></td>
-                                <td><?= $row['gst_option'] ?></td>
-
-                                <td class="action-col text-center">
-                                    <i class="bi bi-eye text-primary me-2" onclick='viewData(<?= json_encode($row) ?>)'></i>
-                                    <i class="bi bi-printer text-success me-2" onclick='printCard(<?= json_encode($row) ?>)'></i>
-                                    <i class="bi bi-trash text-danger" onclick="deleteRow(<?= $row['id'] ?>)"></i>
-                                </td>
-                            </tr>
-                        <?php endwhile; ?>
-
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-
-
-        <button class="btn btn-danger print-btn" onclick="window.print()">Print All</button>
-
-        <!-- ================= VIEW MODAL ================= -->
-        <div class="modal fade" id="viewModal">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Enquiry Details</h5>
-                        <button class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body" id="modalBody"></div>
-                    <div class="modal-footer">
-                        <button class="btn btn-success" onclick="printFromModal()">Save / Print</button>
-                    </div>
+                <div id="photo_type" style="display:none;" class="mt-2">
+                    <h5>Photo Type</h5>
+                    <label><input type="radio" name="photo_type" value="Basic"> Basic</label>
+                    <label><input type="radio" name="photo_type" value="Standard"> Standard</label>
+                    <label><input type="radio" name="photo_type" value="Premium"> Premium</label>
                 </div>
             </div>
-        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- VIDEOS -->
+            <div class="section-box">
+                <h5>Videos</h5>
+                <label><input type="radio" name="video_count" value="4" onclick="showVideoType()"> 4</label>
+                <label><input type="radio" name="video_count" value="8" onclick="showVideoType()"> 8</label>
+                <label><input type="radio" name="video_count" value="12" onclick="showVideoType()"> 12</label>
+                <label><input type="radio" name="video_count" value="16" onclick="showVideoType()"> 16</label>
+                <label><input type="radio" name="video_count" value="custom" onclick="showVideoCustom()"> Custom</label>
 
-        <script>
-            let currentRow = null;
+                <div id="video_custom" style="display:none;" class="mt-2">
+                    <textarea name="video_custom_msg" class="form-control"></textarea>
+                </div>
 
-            function viewData(row) {
-                currentRow = row;
-                let html = `<div class="enquiry-card">
-    <h5 class="text-center mb-3">Bhavi Creations</h5>
-    <p><b>Name:</b> ${row.name}</p>
-    <p><b>Phone:</b> ${row.phone}</p>
-    // <p><b>Photos:</b> ${row.photo_count} (${row.photo_type})</p>
-    <p><b>Photos:</b> ${row.photo_count} (${row.photo_type === 'custom' ? row.photo_custom : row.photo_type})</p>
+                <div id="video_type" style="display:none;" class="mt-2">
+                    <h5>Video Type</h5>
+                    <label><input type="radio" name="video_type" value="Basic"> Basic</label>
+                    <label><input type="radio" name="video_type" value="Standard"> Standard</label>
+                    <label><input type="radio" name="video_type" value="Premium"> Premium</label>
+                </div>
+            </div>
 
-    <p><b>Videos:</b> ${row.video_count} (${row.video_type})</p>
-    <p><b>Reels:</b> ${row.reels_count} (${row.reels_type})</p>
-    <p><b>SEO:</b> ${row.seo_option}</p>
-    <p><b>Payment:</b> ${row.payment_type}</p>
-    <p><b>GST:</b> ${row.gst_option}</p>
-    </div>`;
+            <!-- REELS -->
+            <div class="section-box">
+                <h5>Reels</h5>
+                <label><input type="radio" name="reels_count" value="4" onclick="showReelsType()"> 4</label>
+                <label><input type="radio" name="reels_count" value="8" onclick="showReelsType()"> 8</label>
+                <label><input type="radio" name="reels_count" value="12" onclick="showReelsType()"> 12</label>
+                <label><input type="radio" name="reels_count" value="16" onclick="showReelsType()"> 16</label>
+                <label><input type="radio" name="reels_count" value="custom" onclick="showReelsCustom()"> Custom</label>
 
-                document.getElementById('modalBody').innerHTML = html;
-                new bootstrap.Modal(document.getElementById('viewModal')).show();
-            }
+                <div id="reels_custom" style="display:none;" class="mt-2">
+                    <input type="number" name="reels_custom_msg" class="form-control" placeholder="No of reels">
+                </div>
 
-            function printFromModal() {
-                let w = window.open('', '', 'width=800');
-                w.document.write(currentRow ? document.getElementById('modalBody').innerHTML : '');
-                w.print();
-                w.close();
-            }
+                <div id="reels_type" style="display:none;" class="mt-2">
+                    <h5>Reels Type</h5>
+                    <label><input type="radio" name="reels_type" value="Basic"> Basic</label>
+                    <label><input type="radio" name="reels_type" value="Standard"> Standard</label>
+                    <label><input type="radio" name="reels_type" value="Premium"> Premium</label>
+                </div>
+            </div>
 
-            function printCard(row) {
-                let w = window.open('', '', 'width=800');
-                w.document.write(`
-        <h3 style="text-align:center">Bhavi Creations</h3>
-        <div class="enquiry-card">
-        <p><b>Name:</b> ${row.name}</p>
-        <p><b>Phone:</b> ${row.phone}</p>
-        <p><b>Reels:</b> ${row.reels_count} (${row.reels_type})</p>
-        <p><b>Website:</b> ${row.website_type}</p>
-        <p><b>SEO:</b> ${row.seo_option}</p>
-        </div>
-    `);
-                w.print();
-                w.close();
-            }
+            <!-- WEBSITE -->
+            <div class="section-box">
+                <h5>Website</h5>
+                <label><input type="radio" name="website_type" value="Basic"> Basic</label>
+                <label><input type="radio" name="website_type" value="Standard"> Standard</label>
+                <label><input type="radio" name="website_type" value="Premium"> Premium</label>
+                <label><input type="radio" name="website_type" value="Custom"> Custom</label>
+            </div>
 
-            function deleteRow(id) {
-                if (confirm("Delete this enquiry?")) {
-                    location.href = "delete_enquiry.php?id=" + id;
-                }
-            }
-        </script>
+            <!-- SEO -->
+            <div class="section-box">
+                <h5>SEO</h5>
+                <label><input type="radio" name="seo_option" value="Need"> Need</label>
+                <label><input type="radio" name="seo_option" value="No Need"> No Need</label>
+            </div>
 
+            <!-- SOCIAL -->
+            <div class="section-box">
+                <h5>Social Media Handling</h5>
+                <select class="form-select" multiple name="social_media[]">
+                    <option>Facebook</option>
+                    <option>Instagram</option>
+                    <option>YouTube</option>
+                    <option>LinkedIn</option>
+                    <option>Twitter</option>
+                    <option>Pinterest</option>
+                    <option>Quora</option>
+                </select>
+            </div>
 
+            <!-- PAYMENT -->
+            <div class="section-box">
+                <h5>Payment Type</h5>
+                <label><input type="radio" name="payment_type" value="Quarterly"> Quarterly</label>
+                <label><input type="radio" name="payment_type" value="Half-Yearly"> Half-Yearly</label>
+                <label><input type="radio" name="payment_type" value="Yearly"> Yearly</label>
+            </div>
 
+            <!-- GST -->
+            <div class="section-box">
+                <h5>GST</h5>
+                <label><input type="radio" name="gst_option" value="With GST"> With GST</label>
+                <label><input type="radio" name="gst_option" value="Without GST"> Without GST</label>
+            </div>
 
-    </body>
+            <button class="btn btn-primary w-100">Submit Enquiry</button>
+
+        </form>
+    </div>
 
     <script>
-        $(document).ready(function() {
-            // Toggle dropdown on button click
-            $('.toggleDropdown').change(function() {
-                if ($(this).is(':checked')) {
-                    $('.dropdown-menu').show();
-                } else {
-                    $('.dropdown-menu').hide();
-                }
-            });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        function showPhotoType() {
+            document.getElementById('photo_type').style.display = 'block';
+            document.getElementById('photo_custom').style.display = 'none';
+        }
 
+        function showPhotoCustom() {
+            document.getElementById('photo_custom').style.display = 'block';
+            document.getElementById('photo_type').style.display = 'block';
+        }
+
+        function showVideoType() {
+            document.getElementById('video_type').style.display = 'block';
+            document.getElementById('video_custom').style.display = 'none';
+        }
+
+        function showVideoCustom() {
+            document.getElementById('video_custom').style.display = 'block';
+            document.getElementById('video_type').style.display = 'block';
+        }
+
+        function showReelsType() {
+            document.getElementById('reels_type').style.display = 'block';
+            document.getElementById('reels_custom').style.display = 'none';
+        }
+
+        function showReelsCustom() {
+            document.getElementById('reels_custom').style.display = 'block';
+            document.getElementById('reels_type').style.display = 'block';
+        }
+    </script>
+</body>
 
 </html>

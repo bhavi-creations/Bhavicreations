@@ -391,7 +391,7 @@ $result = $conn->query("SELECT * FROM bhavi_enquiries ORDER BY created_at DESC")
         <div class="container nav_main p-3">
             <div class="d-flex justify-content-between align-items-center">
 
-                <a href="index.php"> <img src="assests/images/bhavi/foot_bhavi_logo_1.webp" class="img-fluid   "
+                <a href="index.php"> <img src="assests/images/bhavi/foot_bhavi_logo.webp" class="img-fluid   "
                         style="width: 150px;height: 65px;" alt=""></a>
 
 
@@ -470,7 +470,6 @@ $result = $conn->query("SELECT * FROM bhavi_enquiries ORDER BY created_at DESC")
                     <!-- <li><a class="dropdown-item menu_item_black  " href="Portfolio.php">Portfolio</a></li> -->
                     <li><a class="dropdown-item menu_item_black  " href="contact_us.php">Contact Us</a></li>
                     <li><a class="dropdown-item menu_item_black  " href="our_works.php">Our Works</a></li>
-                    <li><a class="dropdown-item menu_item_black  " href="multimedia_service.php">Multimedia Service</a></li>
                     <li><a class="dropdown-item menu_item_black  " href="pages.php">Pages</a></li>
                     <!-- <li><a class="dropdown-item menu_item_black lol" href="https://invoice.bhavicreations.com">Login</a></li> -->
                 </ul>
@@ -508,7 +507,6 @@ $result = $conn->query("SELECT * FROM bhavi_enquiries ORDER BY created_at DESC")
                 fill="#000"></path>
         </svg>
     </div>
-
 
     <style>
         .enquiry-card {
@@ -563,209 +561,105 @@ $result = $conn->query("SELECT * FROM bhavi_enquiries ORDER BY created_at DESC")
         /* view enquries */
     </style>
     <style>
-        h3 {
-            font-weight: 600;
-            color: #333;
-        }
+/* ===== COMMON ===== */
+body{
+    background:#f4f6fb;
+    font-family:'Poppins',sans-serif;
+}
 
-        /* ===== MOBILE CARDS ===== */
-        .mobile-cards {
-            display: none;
-        }
+h3{
+    font-weight:600;
+    color:#333;
+}
 
-        .enquiry-card {
-            background: #fff;
-            border-radius: 14px;
-            padding: 18px;
-            margin-bottom: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            border-left: 5px solid #667eea;
-        }
+/* ===== MOBILE CARDS ===== */
+.mobile-cards{
+    display:none;
+}
 
-        .enquiry-card p {
-            margin-bottom: 6px;
-            font-size: 14px;
-        }
+.enquiry-card{
+    background:#fff;
+    border-radius:14px;
+    padding:18px;
+    margin-bottom:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    border-left:5px solid #667eea;
+}
 
-        .enquiry-card .label {
-            font-weight: 600;
-            color: #555;
-        }
+.enquiry-card p{
+    margin-bottom:6px;
+    font-size:14px;
+}
 
-        .enquiry-card i {
-            font-size: 18px;
-            cursor: pointer;
-        }
+.enquiry-card .label{
+    font-weight:600;
+    color:#555;
+}
 
-        .enquiry-card i:hover {
-            transform: scale(1.15);
-            transition: 0.2s;
-        }
+.enquiry-card i{
+    font-size:18px;
+    cursor:pointer;
+}
 
-        /* ===== DESKTOP TABLE ===== */
-        .desktop-table {
-            background: #fff;
-            padding: 15px;
-            border-radius: 16px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
+.enquiry-card i:hover{
+    transform:scale(1.15);
+    transition:0.2s;
+}
 
-        .table {
-            margin-bottom: 0;
-        }
+/* ===== DESKTOP TABLE ===== */
+.desktop-table{
+    background:#fff;
+    padding:15px;
+    border-radius:16px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
 
-        .table thead {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: #fff;
-        }
+.table{
+    margin-bottom:0;
+}
 
-        .table thead th {
-            font-weight: 500;
-            text-align: center;
-            vertical-align: middle;
-        }
+.table thead{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:#fff;
+}
 
-        .table tbody td {
-            vertical-align: middle;
-            text-align: center;
-            font-size: 14px;
-        }
+.table thead th{
+    font-weight:500;
+    text-align:center;
+    vertical-align:middle;
+}
 
-        .action-col i {
-            font-size: 18px;
-            cursor: pointer;
-        }
+.table tbody td{
+    vertical-align:middle;
+    text-align:center;
+    font-size:14px;
+}
 
-        .action-col i:hover {
-            transform: scale(1.15);
-            transition: 0.2s;
-        }
+.action-col i{
+    font-size:18px;
+    cursor:pointer;
+}
 
-        /* ===== RESPONSIVE ===== */
-        @media(max-width:768px) {
+.action-col i:hover{
+    transform:scale(1.15);
+    transition:0.2s;
+}
 
-            /* .desktop-table{
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    /* .desktop-table{
         display:none;
     } */
-            .mobile-cards {
-                display: block;
-            }
-        }
-
-
-
-
-
-        @media print {
-
-/* Hide unwanted items */
-.mobile-cards,
-.print-btn,
-.action-col,
-.bi,
-button {
-    display: none !important;
-}
-
-/* Show table only */
-.desktop-table {
-    display: block !important;
-}
-
-table {
-    width: 100% !important;
-    border-collapse: collapse !important;
-    font-size: 14px;
-}
-
-table th,
-table td {
-    border: 1px solid #000 !important;
-    padding: 8px !important;
-    text-align: center;
-}
-
-/* Heading highlight */
-h3 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #000;
-    text-transform: uppercase;
-    border-bottom: 3px solid #000;
-    padding-bottom: 8px;
-}
-
-/* Page margins */
-
-}
-@media print {
-    table th,
-    table td {
-        padding: 6px !important;
-        font-size: 13px;
+    .mobile-cards{
+        display:block;
     }
-    /* ================= TABLE HEIGHT FIX ================= */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
 }
-
-/* Header */
-table thead th {
-    padding: 8px 10px !important;   /* reduce height */
-    line-height: 1.2 !important;
-    vertical-align: middle !important;
-    text-align: center;
-    white-space: nowrap;           /* single line */
-    font-size: 14px;
-}
-
-/* Body cells */
-table tbody td {
-    padding: 8px 10px !important;
-    line-height: 1.2 !important;
-    vertical-align: middle !important;
-    text-align: center;
-    font-size: 14px;
-}
-
-/* Action buttons height control */
-table td .btn,
-table td button,
-table td a {
-    padding: 4px 8px !important;
-    font-size: 13px;
-    line-height: 1.1;
-}
-
-/* Icons inside table */
-table td i,
-table th i {
-    font-size: 14px;
-}
-
-/* Remove forced heights if any */
-table th,
-table td {
-    height: auto !important;
-    min-height: unset !important;
-}
-
-}
-
-
-
-
-    </style>
+</style>
 
     </head>
 
     <body>
         <div class="container my-4">
-
             <h3 class="text-center mb-4">Bhavi Creations</h3>
 
             <!-- ================= MOBILE VIEW ================= -->
@@ -775,33 +669,10 @@ table td {
 
                         <p><span class="label">Name:</span> <?= htmlspecialchars($row['name']) ?></p>
                         <p><span class="label">Phone:</span> <?= $row['phone'] ?></p>
-
-                        <p>
-                            <span class="label">Photos:</span>
-                            <?= ($row['photo_type'] === 'Custom')
-                                ? $row['photo_count']
-                                : $row['photo_count'] . ' (' . $row['photo_type'] . ')' ?>
-                        </p>
-
-                        <p>
-                            <span class="label">Videos:</span>
-                            <?= ($row['video_type'] === 'Custom')
-                                ? $row['video_count']
-                                : $row['video_count'] . ' (' . $row['video_type'] . ')' ?>
-                        </p>
-
-                        <p>
-                            <span class="label">Reels:</span>
-                            <?= ($row['reels_type'] === 'Custom')
-                                ? $row['reels_count']
-                                : $row['reels_count'] . ' (' . $row['reels_type'] . ')' ?>
-                        </p>
-
-                        <p>
-                            <span class="label">Website:</span>
-                            <?= $row['website_type'] ?>
-                        </p>
-
+                        <p><span class="label">Photos:</span> <?= $row['photo_count'] . ' (' . $row['photo_type'] . ')' ?></p>
+                        <p><span class="label">Videos:</span> <?= $row['video_count'] . ' (' . $row['video_type'] . ')' ?></p>
+                        <p><span class="label">Reels:</span> <?= $row['reels_count'] . ' (' . $row['reels_type'] . ')' ?></p>
+                        <p><span class="label">Website:</span> <?= $row['website_type'] ?></p>
                         <p><span class="label">SEO:</span> <?= $row['seo_option'] ?></p>
                         <p><span class="label">Payment:</span> <?= $row['payment_type'] ?></p>
                         <p><span class="label">GST:</span> <?= $row['gst_option'] ?></p>
@@ -829,7 +700,7 @@ table td {
                             <th>Website</th>
                             <th>SEO</th>
                             <th>Payment</th>
-                            <th>GST</th>
+                            <!-- <th>Date</th> -->
                             <th class="action-col">Action</th>
                         </tr>
                     </thead>
@@ -842,29 +713,13 @@ table td {
                             <tr>
                                 <td><?= htmlspecialchars($row['name']) ?></td>
                                 <td><?= $row['phone'] ?></td>
-
-                                <td>
-                                    <?= ($row['photo_type'] === 'Custom')
-                                        ? $row['photo_count']
-                                        : $row['photo_count'] . ' (' . $row['photo_type'] . ')' ?>
-                                </td>
-
-                                <td>
-                                    <?= ($row['video_type'] === 'Custom')
-                                        ? $row['video_count']
-                                        : $row['video_count'] . ' (' . $row['video_type'] . ')' ?>
-                                </td>
-
-                                <td>
-                                    <?= ($row['reels_type'] === 'Custom')
-                                        ? $row['reels_count']
-                                        : $row['reels_count'] . ' (' . $row['reels_type'] . ')' ?>
-                                </td>
-
+                                <td><?= $row['photo_count'] . ' (' . $row['photo_type'] . ')' ?></td>
+                                <td><?= $row['video_count'] . ' (' . $row['video_type'] . ')' ?></td>
+                                <td><?= $row['reels_count'] . ' (' . $row['reels_type'] . ')' ?></td>
                                 <td><?= $row['website_type'] ?></td>
                                 <td><?= $row['seo_option'] ?></td>
                                 <td><?= $row['payment_type'] ?></td>
-                                <td><?= $row['gst_option'] ?></td>
+                                <!-- <td><?= $row['created_at'] ?></td> -->
 
                                 <td class="action-col text-center">
                                     <i class="bi bi-eye text-primary me-2" onclick='viewData(<?= json_encode($row) ?>)'></i>
@@ -877,9 +732,7 @@ table td {
                     </tbody>
                 </table>
             </div>
-
         </div>
-
 
         <button class="btn btn-danger print-btn" onclick="window.print()">Print All</button>
 
@@ -910,11 +763,10 @@ table td {
     <h5 class="text-center mb-3">Bhavi Creations</h5>
     <p><b>Name:</b> ${row.name}</p>
     <p><b>Phone:</b> ${row.phone}</p>
-    // <p><b>Photos:</b> ${row.photo_count} (${row.photo_type})</p>
-    <p><b>Photos:</b> ${row.photo_count} (${row.photo_type === 'custom' ? row.photo_custom : row.photo_type})</p>
-
+    <p><b>Photos:</b> ${row.photo_count} (${row.photo_type})</p>
     <p><b>Videos:</b> ${row.video_count} (${row.video_type})</p>
     <p><b>Reels:</b> ${row.reels_count} (${row.reels_type})</p>
+    <p><b>Website:</b> ${row.website_type}</p>
     <p><b>SEO:</b> ${row.seo_option}</p>
     <p><b>Payment:</b> ${row.payment_type}</p>
     <p><b>GST:</b> ${row.gst_option}</p>
@@ -954,24 +806,6 @@ table td {
             }
         </script>
 
-
-
-
     </body>
-
-    <script>
-        $(document).ready(function() {
-            // Toggle dropdown on button click
-            $('.toggleDropdown').change(function() {
-                if ($(this).is(':checked')) {
-                    $('.dropdown-menu').show();
-                } else {
-                    $('.dropdown-menu').hide();
-                }
-            });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </html>

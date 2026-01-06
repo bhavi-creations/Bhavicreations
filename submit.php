@@ -2,19 +2,31 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// ================== DB CONNECTION ==================
-$conn = new mysqli(
-    "localhost",
-    "bhavicreationspvtltd",
-    "qbWkuINh3wc8P9z",
-    "bhavicreationspvtltd"
+/* ================== ENV DETECT ================== */
+$isLocal = (
+    $_SERVER['HTTP_HOST'] === 'localhost' ||
+    $_SERVER['HTTP_HOST'] === '127.0.0.1'
 );
+
+/* ================== DB CONNECTION ================== */
+if ($isLocal) {
+    // LOCAL
+    $conn = new mysqli("localhost", "root", "", "bhavicreations_db");
+} else {
+    // LIVE (change if needed)
+    $conn = new mysqli(
+        "localhost",
+        "bhavicreationspvtltd",
+        "YOUR_LIVE_DB_PASSWORD",
+        "bhavicreationspvtltd"
+    );
+}
 
 if ($conn->connect_error) {
     die("DB Connection Failed: " . $conn->connect_error);
 }
 
-// ================== PHPMailer ==================
+/* ================== PHPMailer ================== */
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -22,7 +34,7 @@ require __DIR__ . '/PHPMailer/src/Exception.php';
 require __DIR__ . '/PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/src/SMTP.php';
 
-// ================== POST DATA ==================
+/* ================== POST DATA ================== */
 $name    = $_POST['name'] ?? '';
 $phone   = $_POST['phone'] ?? '';
 $address = $_POST['address'] ?? '';
@@ -46,7 +58,7 @@ $gst_option   = $_POST['gst_option'] ?? '';
 
 $social_media = json_encode($_POST['social_media'] ?? []);
 
-// ================== SAVE TO DATABASE ==================
+/* ================== SAVE TO DATABASE ================== */
 $sql = "INSERT INTO bhavi_enquiries
 (name, phone, address,
 photo_count, photo_type, photo_custom_msg,
@@ -57,7 +69,7 @@ payment_type, gst_option)
 VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 $stmt = $conn->prepare($sql);
-if(!$stmt){
+if (!$stmt) {
     die("SQL Error: " . $conn->error);
 }
 
@@ -70,9 +82,10 @@ $stmt->bind_param(
     $website_type, $seo_option, $social_media,
     $payment_type, $gst_option
 );
+
 $stmt->execute();
 
-// ================== EMAIL SEND ==================
+/* ================== EMAIL SEND ================== */
 $mail = new PHPMailer(true);
 
 try {
@@ -81,8 +94,19 @@ try {
     $mail->SMTPAuth   = true;
     $mail->Username   = 'manimalladi05@gmail.com';
     $mail->Password   = 'mxhnohjzbkofbrbs';
-    $mail->SMTPSecure = 'tls';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
+
+    // ✅ LOCALHOST SSL FIX
+    if ($isLocal) {
+        $mail->SMTPOptions = [
+            'ssl' => [
+                'verify_peer'       => false,
+                'verify_peer_name'  => false,
+                'allow_self_signed' => true,
+            ],
+        ];
+    }
 
     $mail->setFrom('manimalladi05@gmail.com', 'Bhavi Creation');
     $mail->addAddress('manimalladi05@gmail.com');
@@ -91,22 +115,37 @@ try {
     $mail->Subject = 'New Enquiry - Bhavi Creation Pvt Ltd';
 
     $mail->Body = "
-    <h2>New Enquiry</h2>
-    <b>Name:</b> $name<br>
-    <b>Phone:</b> $phone<br>
-    <b>Address:</b> $address<br><br>
-    <b>Photos:</b> $photo_count ($photo_type)<br>
-    <b>Videos:</b> $video_count ($video_type)<br>
-    <b>Reels:</b> $reels_count ($reels_type)<br><br>
-    <b>Website:</b> $website_type<br>
-    <b>SEO:</b> $seo_option<br><br>
-    <b>Payment:</b> $payment_type<br>
-    <b>GST:</b> $gst_option
+        <h2>New Enquiry</h2>
+        <b>Name:</b> $name<br>
+        <b>Phone:</b> $phone<br>
+        <b>Address:</b> $address<br><br>
+
+        <b>Photos:</b> $photo_count ($photo_type)<br>
+        <b>Videos:</b> $video_count ($video_type)<br>
+        <b>Reels:</b> $reels_count ($reels_type)<br><br>
+
+        <b>Website:</b> $website_type<br>
+        <b>SEO:</b> $seo_option<br><br>
+
+        <b>Payment:</b> $payment_type<br>
+        <b>GST:</b> $gst_option
     ";
 
     $mail->send();
-    echo "SUCCESS";
+
+    // ✅ SUCCESS REDIRECT
+    header("Location: index.php?status=success");
+    exit;
 
 } catch (Exception $e) {
     echo "MAIL ERROR: " . $mail->ErrorInfo;
 }
+
+
+
+
+
+
+
+
+
