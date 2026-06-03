@@ -561,7 +561,7 @@
 
     <!-- section 2  -->
 
-    <section class="mt-5 ">
+ <section class="mt-5 ">
         <div class="container">
 
             <div class="row  ">
@@ -587,6 +587,8 @@
             <div class="mt-4">
                 <ul class="nav nav-pills mb-3 kakinada " id="pills-tab1" role="tablist"
                     style="justify-content: space-evenly;">
+
+                
                     <li class="nav-item mt-2" role="presentation">
                         <button class="active team_devision_btn" id="pills-all-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-home"
@@ -756,7 +758,7 @@
                             </div>
                         </button>
                     </li>
-                    
+
                     <li class="nav-item mt-2" role="presentation">
                         <button class="team_devision_btn" id="pills-Designers-kakinada-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-Designers-kakinada" type="button" role="tab"
@@ -1015,14 +1017,192 @@
                             </div>
                         </button>
                     </li>
-                
+
+                    <!-- sample content given below  -->
+
+
+
+                    <li class="nav-item mt-2" role="presentation">
+                        <button class="team_devision_btn" id="pills-ContentWriter-kakinada-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-ContentWriter-kakinada" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">Content Writer
+                            <div class="star-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </button>
+                    </li>
+
+
+
+
+                    <li class="nav-item mt-2" role="presentation">
+                        <button class="team_devision_btn" id="pills-Manager-kakinada-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Manager-kakinada" type="button" role="tab"
+                            aria-controls="pills-contact" aria-selected="false">Office Operations Manager
+                            <div class="star-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </button>
+                    </li>
+
+
 
                     <li class="nav-item mt-2" role="presentation">
                         <button class="team_devision_btn" id="pills-contentwriter-kakinada-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-contentwriter-kakinada" type="button" role="tab"
-                            aria-controls="pills-home" aria-selected="true">Telecaller 
+                            aria-controls="pills-home" aria-selected="true">Telecaller
                             <div class="star-1">
-                                
+
                                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
                                     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                                     viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1617,6 +1797,98 @@
                             </div>
                         </button>
                     </li>
+
+
+
+                    <li class="nav-item mt-2" role="presentation">
+                        <button class="team_devision_btn" id="pills-Socailmedia-rajahmundry-tab  " data-bs-toggle="pill"
+                            data-bs-target="#pills-Socailmedia-rajahmundry" type="button" role="tab"
+                            aria-controls="pills-disabled" aria-selected="false">Social Media
+
+                            <button class="team_devision_btn" id="pills-ContentWriter-kakinada-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-ContentWriter-kakinada" type="button" role="tab"
+                                aria-controls="pills-contact" aria-selected="false"></button>
+
+                            <div class="star-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="star-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                    viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs></defs>
+                                    <g id="Layer_x0020_1">
+                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                        <path class="fil0"
+                                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </button>
+                    </li>
                 </ul>
             </div>
             <div class="tab-content kakinadaContent" id="pills-tabContent1">
@@ -1626,7 +1898,7 @@
                         <div class="row mx-auto my-auto">
                             <div id="recipeCarousel1" class="carousel slide w-100" data-ride="carousel">
                                 <div class="carousel-inner w-100" role="listbox">
-                                     
+
                                     <!-- <div class="carousel-item ">
                                         <div class="col-md-4">
                                             <div class="card card-body">
@@ -1635,7 +1907,7 @@
                                             </div>
                                         </div>
                                     </div> -->
-                                   
+
                                     <div class="carousel-item active">
                                         <div class="col-md-4">
                                             <div class="card card-body">
@@ -1644,14 +1916,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="carousel-item">
+                                    <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
                                                 <img class="img-fluid"
-                                                    src="assests/images/Bhavi_Creations/seo_social_abhi.png">
+                                                    src="assests/images/Bhavi_Creations/pavan_kumar_seo.png">
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
@@ -1692,29 +1964,29 @@
                                         </div>
                                     </div> -->
 
-                                    <!-- <div class="carousel-item">
-                                        <div class="col-md-4">
-                                            <div class="card card-body">
-                                                <img class="img-fluid"
-                                                    src="assests/images/Bhavi_Creations/raviteja.png">
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                    <!-- <div class="carousel-item">
-                                        <div class="col-md-4">
-                                            <div class="card card-body">
-                                                <img class="img-fluid"
-                                                    src="assests/images/Bhavi_Creations/vinaya_designer.png">
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    
                                     <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
                                                 <img class="img-fluid"
-                                                    src="assests/images/Bhavi_Creations/aslesh .png">
+                                                    src="assests/images/Bhavi_Creations/aravindh.png">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="col-md-4">
+                                            <div class="card card-body">
+                                                <img class="img-fluid"
+                                                    src="assests/images/Bhavi_Creations/Aswitha.png">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="col-md-4">
+                                            <div class="card card-body">
+                                                <img class="img-fluid"
+                                                    src="assests/images/Bhavi_Creations/yashwanth.png">
                                             </div>
                                         </div>
                                     </div>
@@ -1726,8 +1998,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                     
-                                     
+
+
                                     <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
@@ -1760,7 +2032,7 @@
                                             </div>
                                         </div>
                                     </div> -->
-                                     
+
                                 </div>
                                 <a class="carousel-control-prev w-auto" href="#recipeCarousel1" role="button"
                                     data-slide="prev">
@@ -1795,9 +2067,9 @@
                                             </div>
                                         </div>
                                     </div> -->
-                            
 
-                             <div class="flip-card mt-4">
+
+                            <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <img src="assests/images/Bhavi_Creations/vijaya.png"
@@ -1808,7 +2080,7 @@
                                         <p>Telecaller </p>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
 
 
 
@@ -1831,7 +2103,7 @@
 
 
 
-                            
+
                             <!-- <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
@@ -1917,7 +2189,7 @@
                     aria-labelledby="pills-Designers-kakinada-tab" tabindex="0">
                     <div class="container text-center my-3">
                         <div class="row mx-auto my-auto" style="justify-content: space-evenly;">
-                          <div class="flip-card mt-4">
+                            <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <img src="assests/images/Bhavi_Creations/sriram.png"
@@ -1929,21 +2201,21 @@
                                         <p>Designer</p>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                             <div class="flip-card  mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <img src="assests/images/Bhavi_Creations/aslesh .png"
+                                        <img src="assests/images/Bhavi_Creations/yashwanth.png"
                                             alt="Front Image" class="card-image img-fluid">
 
                                     </div>
                                     <div class="flip-card-back">
-                                        <p class="title">Aslesh</p>
+                                        <p class="title">Yashwanth</p>
                                         <p>Designer</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="flip-card mt-4">
+                            <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <img src="assests/images/Bhavi_Creations/sathish_designer.png"
@@ -1954,7 +2226,7 @@
                                         <p>Designer</p>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
 
 
 
@@ -1967,7 +2239,7 @@
 
                                         <img src="assests/images/Bhavi_Creations/vinaya_designer.png"
                                             alt="Front Image" class="card-image img-fluid">
-                                        
+
                                     </div>
                                     <div class="flip-card-back">
                                         <p class="title">Sri Vinaya</p>
@@ -1999,18 +2271,18 @@
                     aria-labelledby="pills-SEOTeam-kakinada-tab" tabindex="0">
                     <div class="container text-center my-3">
                         <div class="row mx-auto my-auto" style="justify-content: space-evenly;">
-                            <!-- <div class="flip-card mt-4">
+                            <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <img src="assests/images/Bhavi_Creations/seo_social_abhi.png"
+                                        <img src="assests/images/Bhavi_Creations/pavan_kumar_seo.png"
                                             alt="Front Image" class="card-image img-fluid">
                                     </div>
                                     <div class="flip-card-back">
-                                        <p class="title">Dasari Kalyan Teja Abhishek</p>
+                                        <p class="title">Pavan Kumar</p>
                                         <p>SEO</p>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
@@ -2023,7 +2295,7 @@
                                     </div>
                                 </div>
                             </div>
-                             
+
                         </div>
                     </div>
                 </div>
@@ -2070,6 +2342,65 @@
                         </div>
                     </div>
                 </div>
+
+
+
+                <!-- CONTENT WRITER  -->
+                <div class="tab-pane fade" id="pills-ContentWriter-kakinada" role="tabpanel"
+                    aria-labelledby="pills-ContentWriter-kakinada-tab" tabindex="0">
+
+                    <div class="container text-center my-3" id="kakinadaContentWriter">
+                        <div class="row mx-auto my-auto" style="justify-content: space-evenly;">
+
+                            <div class="flip-card mt-4">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="assests/images/Bhavi_Creations/Aswitha.png"
+                                            alt="Front Image" class="card-image img-fluid">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p class="title">Aswitha</p>
+                                        <p>Content Writer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- office operations manager -->
+                <!-- pills-Manager-kakinada -->
+                <div class="tab-pane fade" id="pills-Manager-kakinada" role="tabpanel"
+                    aria-labelledby="pills-Manager-kakinada-tab" tabindex="0">
+
+                    <div class="container text-center my-3" id="kakinadaContentWriter">
+                        <div class="row mx-auto my-auto" style="justify-content: space-evenly;">
+
+                            <div class="flip-card mt-4">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="assests/images/Bhavi_Creations/aravindh.png"
+                                            alt="Front Image" class="card-image img-fluid">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p class="title">Aravind</p>
+                                        <p>Office Operations Manager</p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
             <div class="tab-content RajahmundryContent" id="pills-tabContent2">
                 <div class="tab-pane fade show active" id="pills-all-rajahmundry" role="tabpanel"
