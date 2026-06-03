@@ -1623,7 +1623,7 @@
 
 <div class="contact-wrapper">
             <!-- <form action="https://formspree.io/f/your-id-here" method="POST" id="Bhavi CreationsContactForm"> -->
-            <!-- <form action="send-mail.php" method="POST">
+             <form action="send-mail.php" method="POST">
 
                 <div class="form-group">
                     <input type="text" name="name" class="form-control-custom" placeholder=" " required>
@@ -1646,7 +1646,7 @@
                     <button type="submit" class="btn-primary-custom" style="width: 100%;"><span>Send Message — Get
                             Free Audit</span></button>
                 </div>
-            </form> -->
+            </form> 
       
       
       
