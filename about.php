@@ -676,7 +676,7 @@
                     <li class="nav-item mt-2" role="presentation">
                         <button class="team_devision_btn" id="pills-Socailmedia-kakinada-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-Socailmedia-kakinada" type="button" role="tab"
-                            aria-controls="pills-disabled" aria-selected="false">Social Media
+                            aria-controls="pills-disabled" aria-selected="false">Social Media Manager
 
                             <div class="star-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
@@ -1022,7 +1022,7 @@
 
 
 
-                    <li class="nav-item mt-2" role="presentation">
+                    <!-- <li class="nav-item mt-2" role="presentation">
                         <button class="team_devision_btn" id="pills-ContentWriter-kakinada-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-ContentWriter-kakinada" type="button" role="tab"
                             aria-controls="pills-contact" aria-selected="false">Content Writer
@@ -1105,7 +1105,7 @@
                                 </svg>
                             </div>
                         </button>
-                    </li>
+                    </li> -->
 
 
 
@@ -1715,7 +1715,7 @@
                     <li class="nav-item mt-2" role="presentation">
                         <button class="team_devision_btn" id="pills-Socailmedia-rajahmundry-tab  " data-bs-toggle="pill"
                             data-bs-target="#pills-Socailmedia-rajahmundry" type="button" role="tab"
-                            aria-controls="pills-disabled" aria-selected="false">Social Media
+                            aria-controls="pills-disabled" aria-selected="false">Social Media Manager
 
                             <div class="star-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
@@ -1803,7 +1803,7 @@
                     <li class="nav-item mt-2" role="presentation">
                         <button class="team_devision_btn" id="pills-Socailmedia-rajahmundry-tab  " data-bs-toggle="pill"
                             data-bs-target="#pills-Socailmedia-rajahmundry" type="button" role="tab"
-                            aria-controls="pills-disabled" aria-selected="false">Social Media
+                            aria-controls="pills-disabled" aria-selected="false">Social Media Manager
 
                             <button class="team_devision_btn" id="pills-ContentWriter-kakinada-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-ContentWriter-kakinada" type="button" role="tab"
@@ -2215,7 +2215,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flip-card mt-4">
+                            <!-- <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <img src="assests/images/Bhavi_Creations/sathish_designer.png"
@@ -2226,7 +2226,7 @@
                                         <p>Designer</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
 
@@ -2335,7 +2335,7 @@
                                     </div>
                                     <div class="flip-card-back">
                                         <p class="title">Devi</p>
-                                        <p>Social Media</p>
+                                        <p>Social Media Manager</p>
                                     </div>
                                 </div>
                             </div>
@@ -2346,7 +2346,7 @@
 
 
                 <!-- CONTENT WRITER  -->
-                <div class="tab-pane fade" id="pills-ContentWriter-kakinada" role="tabpanel"
+                <!-- <div class="tab-pane fade" id="pills-ContentWriter-kakinada" role="tabpanel"
                     aria-labelledby="pills-ContentWriter-kakinada-tab" tabindex="0">
 
                     <div class="container text-center my-3" id="kakinadaContentWriter">
@@ -2369,7 +2369,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- office operations manager -->
                 <!-- pills-Manager-kakinada -->
