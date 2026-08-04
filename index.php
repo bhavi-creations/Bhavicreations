@@ -173,7 +173,7 @@
         <li class="d-md-none "><a class="dropdown-item menu_item  " href="our_works.php">Our Works</a></li>
         <!-- <li class="d-md-none "><a class="dropdown-item menu_item  " href="multimedia_service.php">Multimedia Service</a></li> -->
         <!-- <li class="d-md-none "><a class="dropdown-item menu_item  " href="multimedia_service.php">Multimedia Service</a></li> -->
-          <li><a class="dropdown-item menu_item_black  " href="blogs.php">Blogs</a></li>
+          
         <li class="d-md-none "><a class="dropdown-item menu_item  " href="pages.php">Page</a></li>
         <li class="d-md-none"><a class="dropdown-item menu_item  " href="http://office.bhavicreations.com/">Team Login</a></li>
         <li class="d-md-none"><a class="dropdown-item menu_item lol" href="https://invoice.bhavicreations.com">Admin Login</a></li>
