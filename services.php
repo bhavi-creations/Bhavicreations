@@ -429,6 +429,7 @@
                 <ul class="dropdown-menu dropdown-menu-end menu_border">
                     <li><a class="dropdown-item menu_item_black" href="index.php">Home</a></li>
                     <li><a class="dropdown-item menu_item_black" href="about.php">About</a></li>
+                    <li><a class="dropdown-item menu_item_black" href="blogs.php">Blogs</a></li>
                     <li><a class="dropdown-item menu_item_black" href="services.php">Services</a></li>
                     <!-- <li><a class="dropdown-item menu_item_black  " href="Portfolio.php">Portfolio</a></li> -->
                     <li><a class="dropdown-item menu_item_black  " href="contact_us.php">Contact Us</a></li>

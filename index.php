@@ -166,6 +166,7 @@
       <ul class="dropdown-menu dropdown-menu-end menu_border">
         <li><a class="dropdown-item menu_item" href="index.php">Home</a></li>
         <li><a class="dropdown-item menu_item" href="about.php">About</a></li>
+        <li><a class="dropdown-item menu_item" href="blogs.php">Blogs</a></li>
         <li><a class="dropdown-item menu_item" href="services.php">Services</a></li>
         <!-- <li><a class="dropdown-item menu_item  " href="Portfolio.php">Portfolio</a></li> -->
         <li><a class="dropdown-item menu_item  " href="contact_us.php">Contact Us</a></li>
