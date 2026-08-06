@@ -87,28 +87,7 @@ if ($count_stmt !== false) {
 }
 ?>
 
-<?php
-include './db.connection/db_connection.php';
-
-// Service filter
-$service = isset($_GET['service']) ? $_GET['service'] : '';
-
-// Query
-$sql = "SELECT id, slug, title, main_content, main_image, created_at FROM blogs";
-if (!empty($service)) {
-    $sql .= " WHERE service = ?";
-}
-$sql .= " ORDER BY created_at DESC";
-
-$stmt = $conn->prepare($sql);
-
-if (!empty($service)) {
-    $stmt->bind_param("s", $service);
-}
-
-$stmt->execute();
-$result = $stmt->get_result();
-?>
+<!-- Latest blog listing uses a direct query later in the page -->
 
 <!doctype html>
 <html lang="en">
@@ -798,7 +777,7 @@ $result = $stmt->get_result();
 
 <body>
 
-    <?php include 'header.php'; ?>
+    <?php if (file_exists('header.php')) include 'header.php'; ?>
 
     <main class="fullblogs_section">
         <div class="container py-5">
