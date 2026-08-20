@@ -415,6 +415,18 @@
         }
     </style>
 
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10932795730"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10932795730');
+</script>
+
 </head>
 
 
@@ -714,41 +726,6 @@
 
 
 
-        /* 
-        .media-tab-buttons button {
-      width: 100%;
-      padding: 10px;
-      background-color: #ddd;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-    .media-tab-buttons button.active {
-      background-color: #007BFF;
-      color: #fff;
-    }
-    .media-tab-content {
-      display: none;
-      padding: 15px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .media-tab-content.active {
-      display: block;
-    }
-    .media-tab-content video,
-    .media-tab-content img {
-      margin-bottom: 30px;
-      max-height: 300px;
-      object-fit: contain;
-    }
-    .media-tab-content img,
-    .media-tab-content video {
-      width: 100%;
-    } */
     </style>
     </head>
 

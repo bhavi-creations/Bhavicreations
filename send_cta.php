@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ";
 
         $mail->send();
-        echo "<script>alert('Thank you! Your enquiry has been sent successfully.'); window.location.href='index.html';</script>";
+        echo "<script>alert('Thank you! Your enquiry has been sent successfully.'); window.location.href='thankyou.php';</script>";
     } catch (Exception $e) {
         echo "<script>alert('Message could not be sent. Error: {$mail->ErrorInfo}'); window.history.back();</script>";
     }

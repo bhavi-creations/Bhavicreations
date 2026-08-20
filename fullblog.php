@@ -627,15 +627,12 @@ if ($count_stmt !== false) {
             }
         }
 
-               @media (max-width:991px) {
+        @media (max-width:991px) {
             .fullblogs_section {
                 margin-top: -200px;
-              
+
             }
         }
-
-
-        
     </style>
 
 
@@ -773,6 +770,19 @@ if ($count_stmt !== false) {
             background-color: white !important;
         }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10932795730"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10932795730');
+    </script>
 </head>
 
 <body>

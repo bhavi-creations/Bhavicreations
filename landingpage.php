@@ -375,15 +375,21 @@
             text-decoration: none !important;
         }
     </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10932795730"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-10932795730');
-</script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10932795730"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10932795730');
+    </script>
+
 </head>
 
 
@@ -477,7 +483,7 @@
                     <!-- <li><a class="dropdown-item menu_item_black  " href="Portfolio.php">Portfolio</a></li> -->
                     <li><a class="dropdown-item menu_item_black  " href="contact_us.php">Contact Us</a></li>
                     <li><a class="dropdown-item menu_item_black  " href="our_works.php">Our Works</a></li>
-                      
+
                     <!-- <li><a class="dropdown-item menu_item_black  " href="multimedia_service.php">Multimedia Service</a></li> -->
 
                     <li><a class="dropdown-item menu_item_black  " href="pages.php">Pages</a></li>
@@ -1562,16 +1568,19 @@
                 }
             }
         </style>
-                                            
-                                            <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10932795730"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-10932795730');
-</script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10932795730"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'AW-10932795730');
+        </script>
     </head>
 
     <body>
@@ -1622,37 +1631,37 @@
 
 
 
-<div class="contact-wrapper">
-            <!-- <form action="https://formspree.io/f/your-id-here" method="POST" id="Bhavi CreationsContactForm"> -->
-             <form action="send-mail.php" method="POST">
+            <div class="contact-wrapper">
+                <!-- <form action="https://formspree.io/f/your-id-here" method="POST" id="Bhavi CreationsContactForm"> -->
+                <form action="send-mail.php" method="POST">
 
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control-custom" placeholder=" " required>
-                    <label class="form-label-custom">Your Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" class="form-control-custom" placeholder=" " required>
-                    <label class="form-label-custom">Email Address</label>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" class="form-control-custom" placeholder=" ">
-                    <label class="form-label-custom">Phone Number</label>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" rows="3" class="form-control-custom" placeholder=" "
-                        required></textarea>
-                    <label class="form-label-custom">Tell us about your project</label>
-                </div>
-                <div class="text-center mt-4">
-                    <button type="submit" class="btn-primary-custom" style="width: 100%;"><span>Send Message — Get
-                            Free Audit</span></button>
-                </div>
-            </form> 
-      
-      
-      
-      
-        </div>
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control-custom" placeholder=" " required>
+                        <label class="form-label-custom">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control-custom" placeholder=" " required>
+                        <label class="form-label-custom">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control-custom" placeholder=" ">
+                        <label class="form-label-custom">Phone Number</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="3" class="form-control-custom" placeholder=" "
+                            required></textarea>
+                        <label class="form-label-custom">Tell us about your project</label>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn-primary-custom" style="width: 100%;"><span>Send Message — Get
+                                Free Audit</span></button>
+                    </div>
+                </form>
+
+
+
+
+            </div>
 
 
 
@@ -1719,7 +1728,7 @@
         </section>
 
 
-        
+
 
 
 
@@ -2075,4 +2084,3 @@
     </body>
 
 </html>
-
