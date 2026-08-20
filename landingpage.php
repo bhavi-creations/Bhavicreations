@@ -16,7 +16,7 @@
     <meta name="twitter:title" content="Webfluence — The Finest Marketing Solution">
     <meta name="twitter:description" content="Performance · Brand · Creative · Analytics — under one accountable roof.">
     <meta name="twitter:image" content="https://webfluence.in/og-image.jpg">
-   
+
     <meta name="description" content="Webfluence is kakinada's leading performance marketing agency — Google Ads, Meta, SEO, LinkedIn, E-Commerce. 30+ brands. 4.9★ rating. 12+ years.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -6872,8 +6872,11 @@
                 </div>
                 <p class="hero-sub" id="hero-sub">Crafting iconic brand identities, premium design systems, and strategic digital experiences that turn ambition into market leadership.</p>
                 <div class="hero-actions">
-                    <button class="btn-amber" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});return false;">Start Your Brand Journey →</button>
-                    <button class="btn-outline-white">Explore Our Work</button>
+                    <!-- <button class="btn-amber" href="#contact" >Start Your Brand Journey →</button> -->
+                    <a href="#contact" class="btn-amber">
+                        Start Your Brand Journey →
+                    </a>
+                    <!-- <button class="btn-outline-white">Explore Our Work</button> -->
                 </div>
             </div>
 
@@ -7489,10 +7492,10 @@
                     </div>
                 </div>
                 <div class="cta-form-card reveal d2">
-                    <div class="cta-form-eyebrow">— Tell us about your project</div>
+                    <div id="contact" class="cta-form-eyebrow">— Tell us about your project</div>
                     <div class="cta-form-h">Get a <em>Free</em> Strategy Call.</div>
 
-                    <form class="cta-form cta-form-fields" id="ctaFormFields" action="form-handler.php" method="POST" novalidate onsubmit="return submitCtaForm(event)">
+                    <form class="cta-form cta-form-fields" id="ctaFormFields  contact" action="send_cta.php" method="POST" novalidate>
                         <!-- Anti-Spam Honeypot Fields -->
                         <input class="f-honey" type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;pointer-events:none">
                         <input class="f-honey" type="text" name="nickname" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;pointer-events:none">
@@ -7510,14 +7513,6 @@
                         <div class="cta-field">
                             <label for="ctaPhone">Phone Number</label>
                             <input id="ctaPhone" name="phone" type="tel" placeholder="+91 98765 43210" required>
-                        </div>
-                        <div class="cta-field">
-                            <label for="ctaCity">City</label>
-                            <input id="ctaCity" name="city" type="text" placeholder="e.g. Bengaluru">
-                        </div>
-                        <div class="cta-field">
-                            <label for="ctaState">State</label>
-                            <input id="ctaState" name="state" type="text" placeholder="e.g. Karnataka">
                         </div>
                         <div class="cta-field">
                             <label for="ctaService">Required Service</label>
@@ -7647,6 +7642,187 @@
 
 
 
+    <!-- PREMIUM POPUP — Get Free Strategy -->
+    <div class="modal-bg" id="modalBg" onclick="handleBgClick(event)" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalH">
+            <aside class="modal-brand" aria-hidden="true">
+                <div>
+                    <div class="mb-eyebrow">Free Strategy Call</div>
+                    <h2 class="mb-h">Let's chart your <em>growth</em> together.</h2>
+                </div>
+                <ul class="mb-list">
+                    <li class="mb-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg><span>30-min session with a senior strategist — no juniors, no scripts.</span></li>
+                    <li class="mb-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg><span>Reply within <strong>4 business hours</strong> — we don't ghost.</span></li>
+                    <li class="mb-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg><span>Zero obligation. Walk away with a written action plan either way.</span></li>
+                    <li class="mb-li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg><span>30+ ambitious brands. <strong>4.9★ rating.</strong> 12+ years in kakinada.</span></li>
+                </ul>
+                <div class="mb-foot"><strong>+91 9642343434</strong> · bhavicreations2022@gmail.com</div>
+            </aside>
+
+            <div class="modal-form-pane">
+                <button class="modal-x" type="button" onclick="closeQuote()" aria-label="Close">✕</button>
+
+                <div class="f-fields" id="fFields">
+                    <div class="m-tag">Talk to Us</div>
+                    <h2 class="m-h2" id="modalH">Tell us about <em>your business</em>.</h2>
+                    <p class="m-sub">A few quick details — we'll come back with a real plan, not a sales pitch.</p>
+
+                    <div class="f-err" id="fErr"></div>
+
+
+
+                    <form class="cta-form cta-form-fields" id="popForm" id="ctaFormFields" action="send_cta.php" method="POST" novalidate>
+                        <!-- Anti-Spam Honeypot Fields -->
+                        <input class="f-honey" type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;pointer-events:none">
+                        <input class="f-honey" type="text" name="nickname" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;pointer-events:none">
+                        <input type="hidden" name="_t" id="ctaFormT">
+                        <input type="hidden" name="source" value="Bhavi Creations Homepage">
+
+                        <div class="cta-field">
+                            <label for="ctaName">Full Name</label>
+                            <input id="ctaName" name="name" type="text" placeholder="e.g. Anish Kumar" required>
+                        </div>
+                        <div class="cta-field">
+                            <label for="ctaEmail">Email Address</label>
+                            <input id="ctaEmail" name="email" type="email" placeholder="you@company.com" required>
+                        </div>
+                        <div class="cta-field">
+                            <label for="ctaPhone">Phone Number</label>
+                            <input id="ctaPhone" name="phone" type="tel" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="cta-field">
+                            <label for="ctaService">Required Service</label>
+                            <select id="ctaService" name="service" style="width:100%;padding:12px;border-radius:8px;border:1px solid #ccc;margin-top:4px;" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="Web Development & Design">Web Development &amp; Design</option>
+                                <option value="Custom Media & Video Shoots">Custom Media &amp; Video Shoots</option>
+                                <option value="SEO & Social Media Marketing">SEO &amp; Social Media Marketing</option>
+                                <option value="Dedicated Telecalling Services">Dedicated Telecalling Services</option>
+                                <option value="Complete Brand Identity">Complete Brand Identity</option>
+                            </select>
+                        </div>
+                        <div class="cta-field">
+                            <label for="ctaReq">Project Details</label>
+                            <textarea id="ctaReq" name="message" placeholder="Tell us about your requirements, timeline, or business goals..." required></textarea>
+                        </div>
+
+                        <div class="cta-form-err" id="ctaFormErr" style="display:none;background:#fef2f2;border:1px solid #fecaca;color:#b91c1c;padding:9px 12px;border-radius:8px;font-size:.78rem;margin-bottom:10px;line-height:1.4"></div>
+
+                        <button class="cta-form-submit" type="submit" id="ctaFormSubmit">Send Enquiry <span>→</span></button>
+                        <div class="cta-form-foot">Or email us directly at <a href="mailto:info@bhavicreations.com">info@bhavicreations.com</a></div>
+                    </form>
+                </div>
+
+                <div class="f-success" id="fSuccess" role="status" aria-live="polite">
+                    <div class="f-success-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg></div>
+                    <h3>You're <em>in</em>. Talk soon.</h3>
+                    <p>A senior strategist will call you within <strong style="color:var(--amber)">4 business hours</strong> to set up your free 30-minute strategy session.</p>
+                    <div class="f-success-meta"><span>Call <strong>+91 9642343434</strong></span><span>Mail <strong>bhavicreations2022@gmail.com</strong></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+        /* ── PLATFORM DATA ── */
+        const platforms = [{
+                word: 'Google Ads.',
+                sub: 'Your ads at the top of search — the moment your ideal customer is ready to buy.',
+                badge: 'PPC & Search',
+                headline: 'Top of Search,<br>Every Time',
+                statNum: '4.8×',
+                statLabel: 'Average ROAS delivered',
+                points: [{
+                        icon: '🎯',
+                        text: 'Search, Shopping & YouTube campaigns'
+                    },
+                    {
+                        icon: '📊',
+                        text: '4.8× avg. return on ad spend'
+                    },
+                    {
+                        icon: '⚡',
+                        text: 'Campaigns live in 72 hours'
+                    },
+                    {
+                        icon: '🔁',
+                        text: 'Continuous A/B optimisation'
+                    }
+                ]
+            },
+            {
+                word: 'Social Media.',
+                sub: 'Scroll-stopping Meta and Instagram campaigns that build audiences and drive conversions at scale.',
+                badge: 'Meta & Instagram',
+                headline: 'Scroll-Stopping<br>Campaigns',
+                statNum: '+340%',
+                statLabel: 'Average lead volume increase',
+                points: [{
+                        icon: '📱',
+                        text: 'Meta, Instagram & Facebook Ads'
+                    },
+                    {
+                        icon: '🎬',
+                        text: 'Reels & Stories that convert'
+                    },
+                    {
+                        icon: '👥',
+                        text: 'Lookalike & retargeting audiences'
+                    },
+                    {
+                        icon: '📈',
+                        text: '340% avg. lead volume increase'
+                    }
+                ]
+            },
+            {
+                word: 'Organic SEO.',
+                sub: 'Rank #1 for your highest-value keywords and own your market — with results that compound every month.',
+                badge: 'Search Engine Optimisation',
+                headline: 'Rank #1,<br>Stay There',
+                statNum: '8.7×',
+                statLabel: 'Organic traffic growth delivered',
+                points: [{
+                        icon: '🔍',
+                        text: 'On-page & technical SEO'
+                    },
+                    {
+                        icon: '🌐',
+                        text: 'Local SEO for kakinada & India'
+                    },
+                    {
+                        icon: '✍️',
+                        text: 'Content strategy & link building'
+                    },
+                    {
+                        icon: '📈',
+                        text: 'Results that compound monthly'
+                    }
+                ]
+            },
+            {
+                word: 'LinkedIn & YouTube.',
+                sub: 'Reach decision-makers on LinkedIn and build lasting brand authority with YouTube — built for B2B and high-ticket deals.',
+                badge: 'B2B & Video Marketing',
+                headline: 'Authority in<br>Every Frame',
+                statNum: '5×',
+                statLabel: 'B2B pipeline growth in 6 months',
+                points: [{
+                        icon: '💼',
+                        text: 'LinkedIn ads & thought leadership'
+                    },
+                    {
                         icon: '🎥',
                         text: 'YouTube pre-roll & brand films'
                     },
@@ -7940,6 +8116,81 @@
             }, 280);
         }
 
+        /* ── PREMIUM POPUP — open / close / submit ── */
+        function openQuote() {
+            const bg = document.getElementById('modalBg');
+            bg.classList.add('open');
+            bg.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            /* time-trap stamp */
+            const t = document.getElementById('popFormT');
+            if (t) t.value = String(Math.floor(Date.now() / 1000));
+            /* focus first real field for accessibility */
+            setTimeout(() => {
+                const f = document.querySelector('#popForm input[name="name"]');
+                if (f) f.focus();
+            }, 220);
+        }
+
+        function closeQuote() {
+            const bg = document.getElementById('modalBg');
+            bg.classList.remove('open');
+            bg.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        function handleBgClick(e) {
+            if (e.target === document.getElementById('modalBg')) closeQuote();
+        }
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeQuote();
+        });
+
+        (function() {
+            const form = document.getElementById('popForm');
+            if (!form) return;
+            const btn = document.getElementById('popSubmit');
+            const err = document.getElementById('fErr');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                err.classList.remove('show');
+                err.textContent = '';
+
+                /* Required-field check */
+                const name = form.name.value.trim();
+                const email = form.email.value.trim();
+                const phone = form.phone.value.trim();
+                const message = form.message.value.trim();
+                if (!name || !email || !phone || !message) {
+                    err.textContent = 'Name, email, phone and goal are all required.';
+                    err.classList.add('show');
+                    return;
+                }
+                if (!/^\S+@\S+\.\S+$/.test(email)) {
+                    err.textContent = 'That email address looks incomplete.';
+                    err.classList.add('show');
+                    return;
+                }
+
+                btn.classList.add('loading');
+                btn.disabled = true;
+
+                try {
+                    const res = await fetch('form-handler.php', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    });
+                    const data = await res.json().catch(() => ({}));
+                    if (res.ok && data.ok) {
+                        document.getElementById('fFields').classList.add('hide');
+                        document.getElementById('fSuccess').classList.add('show');
+                        if (window.wflTrackLead) wflTrackLead(); // Google Ads lead conversion
+                    } else {
+                        err.textContent = data.error || 'Could not send right now. Please email bhavicreations2022@gmail.com directly.';
+                        err.classList.add('show');
+                        btn.classList.remove('loading');
+                        btn.disabled = false;
                     }
                 } catch (_) {
                     err.textContent = 'Network hiccup — please try again or email bhavicreations2022@gmail.com.';
@@ -8046,6 +8297,85 @@
                     icon: '🏥',
                     desc: 'Patient acquisition at the lowest cost per appointment for hospitals, multi-specialty clinics and diagnostic chains.',
                     stats: [{
+                        n: '8+',
+                        l: 'Hospitals'
+                    }, {
+                        n: '-58%',
+                        l: 'Cost / Appt'
+                    }, {
+                        n: '12k+',
+                        l: 'Leads / mo'
+                    }],
+                    bullets: ['Doctor & specialty ads', 'Lead-form micro-funnels', 'Retention & recall flows', 'Clinic location SEO'],
+                    clients: 'Multi-specialty groups · Diagnostic chains · Wellness brands',
+                    visualH: 'Patient trust, <em>compounded.</em>'
+                },
+                {
+                    n: '03',
+                    name: 'Fintech',
+                    italic: '',
+                    icon: '💳',
+                    desc: 'Compliant, high-trust campaigns that cut through noise in competitive financial markets — credit, lending, wealth and insurance.',
+                    stats: [{
+                        n: '5+',
+                        l: 'Fintechs'
+                    }, {
+                        n: '-42%',
+                        l: 'CAC drop'
+                    }, {
+                        n: '2.6×',
+                        l: 'Approval rate'
+                    }],
+                    bullets: ['Conversion-led storytelling', 'RBI / IRDAI-safe copy', 'LinkedIn ABM for B2B', 'Onboarding analytics'],
+                    clients: 'Lending platforms · Wealth-tech · Insurance brokers',
+                    visualH: 'Compliance-first, <em>conversion-led.</em>'
+                },
+                {
+                    n: '04',
+                    name: 'Travel &',
+                    italic: 'Hospitality',
+                    icon: '✈️',
+                    desc: 'Visually-led campaigns tuned to seasonal demand that drive direct bookings, packages and repeat stays.',
+                    stats: [{
+                        n: '12+',
+                        l: 'Properties'
+                    }, {
+                        n: '+62%',
+                        l: 'Direct bookings'
+                    }, {
+                        n: '3.4×',
+                        l: 'ROAS'
+                    }],
+                    bullets: ['OTA-bypass direct bookings', 'Seasonal package launches', 'Brand films & reels', 'Loyalty re-engagement'],
+                    clients: 'Boutique resorts · Hotel chains · Tour operators',
+                    visualH: 'From OTA-dependent to <em>direct.</em>'
+                },
+                {
+                    n: '05',
+                    name: 'B2B &',
+                    italic: 'SaaS',
+                    icon: '⚙️',
+                    desc: 'High-value lead generation through LinkedIn, content engines and ABM for long-cycle enterprise deals.',
+                    stats: [{
+                        n: '10+',
+                        l: 'B2B brands'
+                    }, {
+                        n: '5×',
+                        l: 'Pipeline lift'
+                    }, {
+                        n: '18mo',
+                        l: 'Avg. retainer'
+                    }],
+                    bullets: ['LinkedIn ABM', 'Content-led inbound', 'Webinar & case-study engines', 'Sales-marketing alignment'],
+                    clients: 'Enterprise SaaS · IT services · Industrial B2B',
+                    visualH: 'Pipeline, not just <em>impressions.</em>'
+                },
+                {
+                    n: '06',
+                    name: 'Food &',
+                    italic: 'D2C',
+                    icon: '🍽️',
+                    desc: 'Build loyal customer bases and repeat-purchase loops for cloud kitchens, FMCG D2C brands and challenger consumer plays.',
                     stats: [{
                         n: '14+',
                         l: 'D2C brands'
@@ -8122,7 +8452,7 @@
       <div class="ind-vc-visual">
         <div class="ind-vc-emoji">${s.icon}</div>
         <div class="ind-vc-visual-h">${s.visualH}</div>
-        <a class="ind-vc-cta" href="#contact">Discuss this sector →</a>
+        <a class="ind-vc-cta" href="#" onclick="openQuote();return false;">Discuss this sector →</a>
       </div>`;
             }
             tabs.addEventListener('click', e => {
@@ -8832,7 +9162,7 @@
     </script>
 
     <script>
-     
+        /* Mobile drawer toggle */
         function toggleNavDrawer() {
             const drawer = document.getElementById('navDrawer');
             const bg = document.getElementById('navDrawerBg');
@@ -8859,11 +9189,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
