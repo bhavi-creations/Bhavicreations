@@ -34,14 +34,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'manimalladi05@gmail.com';
-        $mail->Password   = 'rcaueajfwhczcrhm';
+        $mail->Username   = 'bhaviwebdevelopment@gmail.com';
+        $mail->Password   = 'ipotpfyrqocuxjld';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Sender & Recipient Details
-        $mail->setFrom('manimalladi05@gmail.com', 'Bhavi Creations Website');
-        $mail->addAddress('manimalladi05@gmail.com', 'Admin');
+        $mail->setFrom('bhaviwebdevelopment@gmail.com', 'Bhavi Creations Website');
+        $mail->addAddress('bhaviwebdevelopment@gmail.com', 'Admin');
         $mail->addReplyTo($email, $name);
 
         // Email Content (HTML Format)

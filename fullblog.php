@@ -623,16 +623,18 @@ if ($count_stmt !== false) {
 
         @media (min-width:992px) {
             .fullblogs_section {
-                margin-top: -120px;
+                margin-top: -0px;
             }
         }
 
-        @media (max-width:991px) {
+        @media (min-width:768px) and (max-width:991px) {
             .fullblogs_section {
-                margin-top: -200px;
+                margin-top: -50px;
 
             }
         }
+
+        
     </style>
 
 
