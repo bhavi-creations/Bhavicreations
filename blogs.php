@@ -786,6 +786,9 @@ $result = $stmt->get_result();
         }
     </style>
 
+    <meta name="google-site-verification" content="A-vbst9H4-RuRLDNd__FbqdtpaaQCXcCQmp7SK9EloE" />
+    </head>
+
     <?php include('./navbar.php'); ?>
 
     <main class="blog_section_stylings">

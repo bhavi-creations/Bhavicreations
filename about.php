@@ -381,6 +381,7 @@
 
   gtag('config', 'AW-10932795730');
 </script>
+<meta name="google-site-verification" content="A-vbst9H4-RuRLDNd__FbqdtpaaQCXcCQmp7SK9EloE" />
 
 </head>
 
@@ -1945,14 +1946,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
+                                    <!-- <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
                                                 <img class="img-fluid"
                                                     src="assests/images/Bhavi_Creations/devi_social_media.png">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="carousel-item">
                                         <div class="col-md-4">
                                             <div class="card card-body">
@@ -2352,7 +2353,7 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="flip-card mt-4">
+                            <!-- <div class="flip-card mt-4">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
                                         <img src="assests/images/Bhavi_Creations/devi_social_media.png"
@@ -2363,7 +2364,7 @@
                                         <p>Social Media Manager</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

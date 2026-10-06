@@ -355,6 +355,8 @@
   gtag('config', 'AW-10932795730');
 </script>
 
+<meta name="google-site-verification" content="A-vbst9H4-RuRLDNd__FbqdtpaaQCXcCQmp7SK9EloE" />
+
 </head>
 
 <body style="background-color: rgb(255, 255, 255);">

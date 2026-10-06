@@ -6790,6 +6790,9 @@
     </style>
     <script src="js/site-head.js?v=20260728" defer></script>
 
+
+    <meta name="google-site-verification" content="A-vbst9H4-RuRLDNd__FbqdtpaaQCXcCQmp7SK9EloE" />
+
 </head>
 
 <body>
